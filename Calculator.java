@@ -13,7 +13,9 @@ public class Calculator {
         boolean valid = true;
 
         switch (operator) {
-            
+            case '+':
+                result = num1 + num2;
+                break;
 	    default:
                 valid = false;
         }
