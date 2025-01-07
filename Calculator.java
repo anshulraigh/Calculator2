@@ -24,6 +24,10 @@ public class Calculator {
 		break;
 	    default:
                 valid = false;
+	    case '/':
+                if (num2 != 0) result = num1 / num2;
+                else valid = false;
+                break;
         }
 
         if (valid) System.out.println("Result: " + result);
